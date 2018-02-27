@@ -1,0 +1,56 @@
+#header{
+	position:absolute;
+	z-index:1000;
+	right:0;
+	left:0;
+
+    nav{
+        a{
+            color:#FFF;
+        }
+    }
+}
+
+
+div#banner{
+    position: relative;
+
+}
+
+.fixar {
+    padding:0px !important;
+    position:fixed !important;
+    z-index: 1000 !important;
+    margin-top: 0px !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
+    background-color: #7a2a78 !important;
+    .logo-header{
+        display:none !important;
+    }
+    .redes{
+        display:none !important;
+    }
+}
+
+@media (max-width: 991px) {  
+    .logo-header{
+        display:none !important;
+    }
+    .redes{
+        display:none !important;
+    }
+
+    .header, .headerb{
+        background-color:#7a2a78;
+
+        a{
+            color:#FFF !important;
+        }
+    }
+}
+
+@media (min-width: 992px) {  
+	
+}

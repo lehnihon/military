@@ -1,0 +1,172 @@
+div#content{
+
+	section#descricao{
+		padding-top:80px;
+		padding-bottom:20px;
+		background-color:#FFF;
+		text-align:center;
+
+		.box{
+			border:1px solid #abb1b8;
+			border-radius:20px;
+			padding-bottom:20px;
+
+			img{
+				border-top-right-radius: 20px;
+				border-top-left-radius: 20px;
+			}
+		}
+
+		h2{
+			margin-bottom:25px;
+		}
+
+		.col-md-3,.col-md-4{
+			margin-bottom:60px;
+		}
+
+		h3{
+			margin-top:20px;
+			margin-bottom:10px;
+			color:#61235f;
+		}
+
+		hr{
+			border-top:2px solid #61235f;
+			width:20%;
+		}
+
+		p{
+			font-size:16px;
+			padding-bottom:0px;
+			line-height:1.6;
+			color:#abb1b8;
+		}
+
+		a{
+			color:#61235f;
+			font-weight:bold;
+		}
+	}
+
+	section#detalhes{
+		padding-top:80px;
+		padding-bottom:20px;
+		background-color:#FFF;
+
+		img{
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+		}
+
+		h3{
+			margin-top:20px;
+			margin-bottom:10px;
+			color:#61235f;
+		}
+
+		hr{
+			border-top:2px solid #61235f;
+			width:15%;
+			text-align:left;
+			margin-left: 0;
+		}
+
+		.col-md-7{
+			padding-left:35px;
+		}
+	}
+
+	section#sobre-detalhes{
+		padding-top:80px;
+		padding-bottom:20px;
+		background-color:#FFF;
+
+		h1{
+			margin-bottom:25px;
+		}
+
+		p{
+			font-size:16px;
+			line-height:1.7;
+		}
+
+		.alexb{
+			color:#faac11;
+		}
+
+		img{
+			margin-bottom:20px;
+		}
+
+	}
+
+	section#sobre{
+		padding:160px 0;
+		background-image: url("images/background2.jpg");
+	    -webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center top;
+	    background-color: #050304;
+	    background-attachment: fixed;
+	    color:#FFF;
+	    text-align:left;
+
+		h1{
+			color:#FFF;
+			margin-bottom:25px;
+		}
+
+		p{
+			font-size:16px;
+			color:#FFF;
+			line-height:1.7;
+		}
+
+		.alexb{
+			color:#faac11;
+		}
+
+		img{
+			margin-bottom:20px;
+		}
+	}
+
+	section#fale-conosco{
+		padding-top:80px;
+		padding-bottom:20px;
+		background-color:#FFF;
+	}
+
+	section#contato{
+		padding:100px 0;
+		background-color:#FFF;
+
+		h3{
+			font-weight:bold;
+			color:#000;
+			margin-bottom:10px;
+		}
+
+		.fone{
+			font-size:28px;
+		}
+	}
+}
+@media (max-width: 991px) {
+	section#sobre{
+	    -webkit-background-size: auto !important;
+		-moz-background-size: auto !important;
+		-o-background-size: auto !important;
+		background-size: auto !important;
+		background-position: -300px top !important;
+	}
+
+}
+
+@media (min-width: 992px) {  
+  
+}
