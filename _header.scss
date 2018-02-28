@@ -1,20 +1,52 @@
+#pesquisa{
+    background-color:#2d2d2d;
+    padding:20px 0;
+
+    .logop{
+        margin-top:3px;
+    }
+    .cbusca{
+        float:left;
+        display:block;
+        padding:3px 10px;
+        background-color:#141414;
+        color:#FFF;
+        border:2px solid #141414;
+        width:80%;
+    }
+    .bbusca{
+        float:left;
+        display:block;
+    }
+    .bbusca:hover{
+        cursor:pointer;
+    }
+}
 #header{
 	position:absolute;
 	z-index:1000;
 	right:0;
 	left:0;
-
     nav{
+        padding:0;
+
         a{
+            padding:0;
+            padding-right:30px;
             color:#FFF;
+            font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size:30px;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out; 
+            transition: all 0.5s ease-in-out;
+        }
+
+        a:hover{
+            color:#292929;
         }
     }
-}
-
-
-div#banner{
-    position: relative;
-
 }
 
 .fixar {
@@ -25,32 +57,31 @@ div#banner{
     right: 0 !important;
     left: 0 !important;
     top: 0 !important;
-    background-color: #7a2a78 !important;
-    .logo-header{
-        display:none !important;
-    }
-    .redes{
-        display:none !important;
+    background-color: #2d2d2d !important;
+
+    a:hover{
+        color: #ffab00 !important;
     }
 }
 
-@media (max-width: 991px) {  
-    .logo-header{
-        display:none !important;
+@media (max-width: 991px) {
+    #pesquisa{
+        display:none;
     }
-    .redes{
-        display:none !important;
-    }
-
-    .header, .headerb{
-        background-color:#7a2a78;
-
-        a{
-            color:#FFF !important;
+    #header{
+        background-color:#2d2d2d;
+        
+        .logop-mobile{
+            display:block;
+            position: absolute;
+            right:10px;
+            top:10px;
         }
     }
 }
 
 @media (min-width: 992px) {  
-	
+	.logop-mobile{
+        display:none;
+    }
 }

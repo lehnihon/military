@@ -40,6 +40,7 @@ add_action( 'after_setup_theme', 'site_setup' );
  */
 function site_scripts() {
 	wp_enqueue_style( 'site-style-bootstrap', get_template_directory_uri() ."/bootstrap/css/bootstrap.min.css" );
+	wp_enqueue_style( 'site-style-animate', get_template_directory_uri() ."/animate.css" );
 	wp_enqueue_style( 'site-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'site-script-jquery', get_template_directory_uri() .'/js/jquery.min.js',array(),false,true);

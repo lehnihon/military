@@ -20,187 +20,87 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 @font-face {
-  font-family: Alex Brush;
-  src: url(font/AlexBrush-Regular.ttf); }
+  font-family: Aller Light;
+  src: url(font/Aller_Lt.ttf); }
+@font-face {
+  font-family: Bebas Neue;
+  src: url(font/BebasNeue-Regular.ttf); }
 #page {
-  background-color: #f9f2e8;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  font-family: Aller Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #31302f;
   text-align: center;
   font-size: 18px; }
-  #page .alexa {
-    font-family: Alex Brush, Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-    color: #faac11;
-    padding: 0 !important;
-    line-height: 0.6 !important;
-    font-size: 66px !important; }
-  #page .alexb {
-    font-family: Alex Brush, Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-    color: #faac11;
-    padding: 0 !important;
-    line-height: 0.6 !important;
-    font-size: 66px !important; }
-  #page .alexc {
-    font-family: Alex Brush, Arial, "Helvetica Neue", Helvetica, sans-serif !important;
-    color: #61235f;
-    padding: 0 !important;
-    line-height: 0.6 !important;
-    font-size: 66px !important; }
-  #page .insta {
-    font-size: 80px; }
+  #page p {
+    line-height: 1.9; }
   #page a {
     color: #31302f; }
   #page a:hover {
     text-decoration: none; }
   #page h1 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
     font-size: 42px;
-    color: #61235f; }
+    color: #292929; }
   #page h2 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
     font-size: 42px;
-    color: #61235f; }
+    color: #292929; }
   #page h3 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
     font-size: 22px;
-    color: #61235f; }
+    color: #292929; }
   #page h4 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
-    color: #31302f; }
+    color: #292929; }
   #page h5 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 14px;
-    color: #31302f; }
-  #page .videoWrapperb {
-    position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0; }
-  #page .videoWrapperb iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  #page .videoWrapper {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    position: relative;
-    padding-bottom: 40%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0; }
-  #page .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  #page .btn-semfundo {
-    background-color: transparent;
-    padding: 25px 35px;
-    -webkit-transition: background 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out;
-    -o-transition: background 0.5s ease-in-out;
-    -ms-transition: background 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out; }
-  #page .btn-rosa {
-    border: 2px solid #f35353;
-    color: #f35353; }
-  #page .btn-rosa:hover {
-    background-color: #f35353;
-    color: #FFF; }
-  #page .btn-amarelo {
-    border: 2px solid #faac11;
-    color: #faac11; }
-  #page .btn-amarelo:hover {
-    background-color: #faac11;
-    color: #FFF; }
-  #page .bx-wrapper .bx-viewport {
-    margin-top: 10px;
-    -webkit-box-shadow: 0 0 0px;
-    box-shadow: 0 0 0px;
-    border: 0px solid white;
-    left: 0px; }
-    #page .bx-wrapper .bx-viewport .bx-clone {
-      display: none !important; }
-  #page .input-message {
-    background-color: #efc031;
-    text-align: left;
-    border: 0;
-    width: 100%;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    padding: 20px; }
-  #page .input-message::placeholder {
-    color: #9e3a27 !important; }
-  #page .input-contato {
-    background-color: #FFF;
-    text-align: left;
-    border: 1px solid #abb1b8;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px 20px; }
-  #page .input-contato::placeholder {
-    color: #9e3a27 !important; }
-  #page .input-contato:active, #page .input-contato:hover, #page .input-contato:focus, #page .input-message:active, #page .input-message:hover, #page .input-message:focus {
-    border: 0;
-    outline: 0; }
-  #page .btn-contato {
-    padding: 5px 0;
-    border: 0;
-    width: 190px;
-    background-color: #950e19;
-    border: 1px solid #f9f2e8;
-    color: #FFF;
-    border-radius: 50px;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
-  #page .btn-contato:hover {
-    background-color: #FFF !important;
-    color: #950e19 !important; }
-  #page .input-news {
-    background-color: #FFF;
-    text-align: center;
-    border: 0;
-    width: 200px;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    padding: 5px 0; }
-  #page .btn-news {
-    padding: 5px 0;
-    border: 0;
-    width: 190px;
-    background-color: #ed4021;
-    color: #FFF;
-    border-radius: 50px;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
-  #page .btn-news:hover {
-    background-color: #FFF !important;
-    color: #ed4021 !important; }
-  #page .roxo {
-    color: #662864; }
+    color: #292929; }
+  #page .separador {
+    border-top: 8px solid #292929;
+    width: 80px; }
+  #page #pesquisa {
+    background-color: #2d2d2d;
+    padding: 20px 0; }
+    #page #pesquisa .logop {
+      margin-top: 3px; }
+    #page #pesquisa .cbusca {
+      float: left;
+      display: block;
+      padding: 3px 10px;
+      background-color: #141414;
+      color: #FFF;
+      border: 2px solid #141414;
+      width: 80%; }
+    #page #pesquisa .bbusca {
+      float: left;
+      display: block; }
+    #page #pesquisa .bbusca:hover {
+      cursor: pointer; }
   #page #header {
     position: absolute;
     z-index: 1000;
     right: 0;
     left: 0; }
-    #page #header nav a {
-      color: #FFF; }
-  #page div#banner {
-    position: relative; }
+    #page #header nav {
+      padding: 0; }
+      #page #header nav a {
+        padding: 0;
+        padding-right: 30px;
+        color: #FFF;
+        font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 30px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
+      #page #header nav a:hover {
+        color: #292929; }
   #page .fixar {
     padding: 0px !important;
     position: fixed !important;
@@ -209,126 +109,68 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     right: 0 !important;
     left: 0 !important;
     top: 0 !important;
-    background-color: #7a2a78 !important; }
-    #page .fixar .logo-header {
-      display: none !important; }
-    #page .fixar .redes {
-      display: none !important; }
+    background-color: #2d2d2d !important; }
+    #page .fixar a:hover {
+      color: #ffab00 !important; }
   @media (max-width: 991px) {
-    #page .logo-header {
-      display: none !important; }
-    #page .redes {
-      display: none !important; }
-    #page .header, #page .headerb {
-      background-color: #7a2a78; }
-      #page .header a, #page .headerb a {
-        color: #FFF !important; } }
-  #page div#content section#descricao {
-    padding-top: 80px;
-    padding-bottom: 20px;
-    background-color: #FFF;
-    text-align: center; }
-    #page div#content section#descricao .box {
-      border: 1px solid #abb1b8;
-      border-radius: 20px;
-      padding-bottom: 20px; }
-      #page div#content section#descricao .box img {
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px; }
-    #page div#content section#descricao h2 {
-      margin-bottom: 25px; }
-    #page div#content section#descricao .col-md-3, #page div#content section#descricao .col-md-4 {
-      margin-bottom: 60px; }
-    #page div#content section#descricao h3 {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      color: #61235f; }
-    #page div#content section#descricao hr {
-      border-top: 2px solid #61235f;
-      width: 20%; }
-    #page div#content section#descricao p {
-      font-size: 16px;
-      padding-bottom: 0px;
-      line-height: 1.6;
-      color: #abb1b8; }
-    #page div#content section#descricao a {
-      color: #61235f;
-      font-weight: bold; }
-  #page div#content section#detalhes {
-    padding-top: 80px;
-    padding-bottom: 20px;
-    background-color: #FFF; }
-    #page div#content section#detalhes img {
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px; }
-    #page div#content section#detalhes h3 {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      color: #61235f; }
-    #page div#content section#detalhes hr {
-      border-top: 2px solid #61235f;
-      width: 15%;
-      text-align: left;
-      margin-left: 0; }
-    #page div#content section#detalhes .col-md-7 {
-      padding-left: 35px; }
-  #page div#content section#sobre-detalhes {
-    padding-top: 80px;
-    padding-bottom: 20px;
-    background-color: #FFF; }
-    #page div#content section#sobre-detalhes h1 {
-      margin-bottom: 25px; }
-    #page div#content section#sobre-detalhes p {
-      font-size: 16px;
-      line-height: 1.7; }
-    #page div#content section#sobre-detalhes .alexb {
-      color: #faac11; }
-    #page div#content section#sobre-detalhes img {
-      margin-bottom: 20px; }
-  #page div#content section#sobre {
-    padding: 160px 0;
-    background-image: url("images/background2.jpg");
+    #page #pesquisa {
+      display: none; }
+    #page #header {
+      background-color: #2d2d2d; }
+      #page #header .logop-mobile {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px; } }
+  @media (min-width: 992px) {
+    #page .logop-mobile {
+      display: none; } }
+  #page div#content .bcg {
+    width: 100%;
+    background-image: url("images/military-background1.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #050304;
-    background-attachment: fixed;
-    color: #FFF;
-    text-align: left; }
-    #page div#content section#sobre h1 {
-      color: #FFF;
-      margin-bottom: 25px; }
-    #page div#content section#sobre p {
-      font-size: 16px;
-      color: #FFF;
-      line-height: 1.7; }
-    #page div#content section#sobre .alexb {
-      color: #faac11; }
-    #page div#content section#sobre img {
-      margin-bottom: 20px; }
-  #page div#content section#fale-conosco {
-    padding-top: 80px;
-    padding-bottom: 20px;
-    background-color: #FFF; }
-  #page div#content section#contato {
-    padding: 100px 0;
-    background-color: #FFF; }
-    #page div#content section#contato h3 {
-      font-weight: bold;
-      color: #000;
-      margin-bottom: 10px; }
-    #page div#content section#contato .fone {
-      font-size: 28px; }
-  @media (max-width: 991px) {
-    #page section#sobre {
-      -webkit-background-size: auto !important;
-      -moz-background-size: auto !important;
-      -o-background-size: auto !important;
-      background-size: auto !important;
-      background-position: -300px top !important; } }
+    background-position: center 77px;
+    background-attachment: fixed; }
+    #page div#content .bcg .container {
+      padding-top: 140px;
+      padding-bottom: 400px;
+      position: relative; }
+      #page div#content .bcg .container h1 {
+        margin-bottom: 25px; }
+      #page div#content .bcg .container img.logo {
+        margin-bottom: 25px; }
+      #page div#content .bcg .container .separador {
+        margin-bottom: 25px; }
+      #page div#content .bcg .container p {
+        color: #FFF; }
+      #page div#content .bcg .container .video {
+        position: absolute;
+        bottom: -300px; }
+  #page div#content .bcgb {
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/military-background2.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 77px; }
+  #page div#content .bcgc {
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/military-background3.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 77px;
+    background-attachment: fixed; }
   #page #footer {
     background: linear-gradient(-90deg, #842b82, #562755);
     color: #FFFFFF;
@@ -396,5 +238,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
           color: #FFF; }
         #page div.copyrino ul li a:hover {
           color: #cd4228; }
+  #page .wow {
+    visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */

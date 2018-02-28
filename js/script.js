@@ -13,4 +13,15 @@
         }
       });
     });
+    var $meuMenu = $('#header');
+    $(document).on('scroll', function () {
+        if (1 <= $(window).scrollTop()) {
+            $meuMenu.addClass('fixar');
+             $meuMenu.find('a').addClass('animated fadeIn');
+        } else {
+            $meuMenu.removeClass('fixar');
+            $meuMenu.find('a').removeClass('animated fadeIn');
+        }
+
+    });
 } )( jQuery );

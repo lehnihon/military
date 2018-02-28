@@ -1,53 +1,27 @@
 <?php
-get_header('home'); ?>
-<style type="text/css">
-	.bcg{
-		height: 100vh;
-		width: 100%;
-		background-image: url("wp-content/themes/military/images/military-background1.jpg");
-	    -webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center top;
-	    background-attachment: fixed;
-	}
-	.bcgb{
-		height: 100vh;
-		width: 100%;
-		background-image: url("wp-content/themes/military/images/military-background2.jpg");
-	    -webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center top;
-	    background-attachment: fixed;
-	}
-</style>
-<div id="parallax1" class="bcg">
+get_header(); ?>
 
-</div>
-<div class="spacer s1">
-<div class="box2 blue">
-<p>Content 1</p>
-<a href="#" class="viewsource">view source</a>
-</div>
-</div>
-<div class="spacer s0"></div>
-<div class="bcgb">
- afsfasf
-</div>
-<div class="spacer s1" id="sobre">
-<div class="box2 blue">
-<p>Content 2</p>
-<a href="#" class="viewsource">view source</a>
-</div>
-</div>
-<div class="spacer s0"></div>
-<div id="parallax3" class="parallaxParent">
-<div style="background-image: url(<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/military-background3.jpg"; ?>);"></div>
+<div id="content">
+	<div class="bcg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-left">
+					<img class="logo img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo.png"; ?>"/>
+					<h1>UMA NOVA FORMA DE TRATAR SEU CORPO E SUA MENTE.</h1>
+					<div class="separador"></div>
+					<p>Um treinamento que além de capacitar seu corpo a desenvolver atividades físicas até então inexploradas, trata da sua mente e superação. Que tem como foco a quebra de limites, e principalmente a saúde mental, e corporal.</p>
+				</div>
+			</div>
+			<div class="video embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p9WZ1jOvO-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+		</div>
+
+	</div>
+	<div class="bcgb">
+
+	</div>
+	<div class="bcgc">
+
+	</div>
 </div>
 
 <?php get_footer(); ?>
