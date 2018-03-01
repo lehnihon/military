@@ -27,6 +27,7 @@
 	z-index:1000;
 	right:0;
 	left:0;
+    top:120px;
     nav{
         padding:0;
 
@@ -50,7 +51,7 @@
 }
 
 .fixar {
-    padding:0px !important;
+    padding:16px 0 !important;
     position:fixed !important;
     z-index: 1000 !important;
     margin-top: 0px !important;
@@ -70,7 +71,8 @@
     }
     #header{
         background-color:#2d2d2d;
-        
+        top: 0;
+        padding:16px 0 !important;
         .logop-mobile{
             display:block;
             position: absolute;

@@ -35,7 +35,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page{
 	background-color:#FFFFFF;
 	font-family: Aller Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color:#31302f;
+	color:#292929;
 	text-align:center;
 	font-size:18px;
 
@@ -55,27 +55,27 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	h1{
 		font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
 		margin: 0;
-		font-size: 42px;
+		font-size: 48px;
 		color:#292929;
 	}
 
 	h2{
 		font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
 		margin: 0;
-		font-size: 42px;
+		font-size: 60px;
 		color:#292929;
 	}
 
 	h3{
 		font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
 		margin: 0;
-		font-size: 22px;
+		font-size: 48px;
 		color:#292929;
 	}
 
 	h4{
 		font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 18px;
+		font-size: 28px;
 		color:#292929;
 	}
 
@@ -90,12 +90,66 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		width:80px;
 	}
 
+	.btn-preto{
+		font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size:22px;
+		background-color:#2d2d2d;
+		color:#FFF;
+		padding:10px 25px;
+		border:1px solid #2d2d2d;
+		-webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+	}
+
+	.btn-preto:hover{
+		background-color:#FFF;
+		color:#2d2d2d;
+		cursor:pointer;
+	}
+
+	.amarelo{
+		color:#f7aa0f;
+	}
+
 	@import 'header';
 	@import 'content';
 	@import 'footer';
 	
 	.wow { visibility: hidden; }
-
 }
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 260px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url("images/preloader.gif");;
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -130px 0 0 -130px;
+  /* is width and height divided by two */
+}
+
 
 

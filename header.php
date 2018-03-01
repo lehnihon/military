@@ -21,7 +21,10 @@ new WOW().init();
 </script>
 </head>
 
-<body class="is-loading">
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
 <div id="page">
 	<div id="pesquisa">
 		<div class="container">
@@ -44,19 +47,19 @@ new WOW().init();
 				</button>
 				<div class="row no-gutters collapse navbar-collapse text-left" id="navbarSupportedContent">
 					<div class="col-md-auto">
-						<a class="nav-link" href="#sobre">HOME</a>
+						<a class="nav-link" href="#pesquisa">HOME</a>
 					</div>
 					<div class="col-md-auto">
-						<a class="nav-link" href="<?php echo home_url( '/historia' ); ?>">SOBRE</a>
+						<a class="nav-link" href="#bcgb">SOBRE</a>
 					</div>
 					<div class="col-md-auto">
-						<a class="nav-link" href="<?php echo home_url( '/marca-propria' ); ?>">ESTRUTURA</a>
+						<a class="nav-link" href="#bcgc">ESTRUTURA</a>
 					</div>
 					<div class="col-md-auto">
-						<a class="nav-link" href="<?php echo home_url( '/distribuicao' ); ?>">HORÁRIOS/PLANOS</a>
+						<a class="nav-link" href="#bcge">HORÁRIOS/PLANOS</a>
 					</div>
 					<div class="col-md-auto">
-						<a class="nav-link" href="<?php echo home_url( '/contato' ); ?>">TRABALHE CONOSCO</a>
+						<a class="nav-link" href="#bcgf">TRABALHE CONOSCO</a>
 					</div>
 				</div>
 			</nav>

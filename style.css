@@ -28,7 +28,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page {
   background-color: #FFFFFF;
   font-family: Aller Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #31302f;
+  color: #292929;
   text-align: center;
   font-size: 18px; }
   #page p {
@@ -40,21 +40,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page h1 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
-    font-size: 42px;
+    font-size: 48px;
     color: #292929; }
   #page h2 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
-    font-size: 42px;
+    font-size: 60px;
     color: #292929; }
   #page h3 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
-    font-size: 22px;
+    font-size: 48px;
     color: #292929; }
   #page h4 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 28px;
     color: #292929; }
   #page h5 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -63,6 +63,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page .separador {
     border-top: 8px solid #292929;
     width: 80px; }
+  #page .btn-preto {
+    font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: #2d2d2d;
+    color: #FFF;
+    padding: 10px 25px;
+    border: 1px solid #2d2d2d;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  #page .btn-preto:hover {
+    background-color: #FFF;
+    color: #2d2d2d;
+    cursor: pointer; }
+  #page .amarelo {
+    color: #f7aa0f; }
   #page #pesquisa {
     background-color: #2d2d2d;
     padding: 20px 0; }
@@ -85,7 +103,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     position: absolute;
     z-index: 1000;
     right: 0;
-    left: 0; }
+    left: 0;
+    top: 120px; }
     #page #header nav {
       padding: 0; }
       #page #header nav a {
@@ -102,7 +121,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       #page #header nav a:hover {
         color: #292929; }
   #page .fixar {
-    padding: 0px !important;
+    padding: 16px 0 !important;
     position: fixed !important;
     z-index: 1000 !important;
     margin-top: 0px !important;
@@ -116,7 +135,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     #page #pesquisa {
       display: none; }
     #page #header {
-      background-color: #2d2d2d; }
+      background-color: #2d2d2d;
+      top: 0;
+      padding: 16px 0 !important; }
       #page #header .logop-mobile {
         display: block;
         position: absolute;
@@ -125,7 +146,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   @media (min-width: 992px) {
     #page .logop-mobile {
       display: none; } }
-  #page div#content .bcg {
+  #page #content #bcg {
     width: 100%;
     background-image: url("images/military-background1.jpg");
     -webkit-background-size: cover;
@@ -135,23 +156,23 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background-repeat: no-repeat;
     background-position: center 77px;
     background-attachment: fixed; }
-    #page div#content .bcg .container {
+    #page #content #bcg .container {
       padding-top: 140px;
       padding-bottom: 400px;
       position: relative; }
-      #page div#content .bcg .container h1 {
+      #page #content #bcg .container h1 {
         margin-bottom: 25px; }
-      #page div#content .bcg .container img.logo {
+      #page #content #bcg .container img.logo {
         margin-bottom: 25px; }
-      #page div#content .bcg .container .separador {
-        margin-bottom: 25px; }
-      #page div#content .bcg .container p {
+      #page #content #bcg .container .separador {
+        margin-bottom: 35px; }
+      #page #content #bcg .container p {
         color: #FFF; }
-      #page div#content .bcg .container .video {
+      #page #content #bcg .container .video {
         position: absolute;
-        bottom: -300px; }
-  #page div#content .bcgb {
-    height: 100vh;
+        bottom: -300px;
+        z-index: 1000; }
+  #page #content #bcgb {
     width: 100%;
     background-image: url("images/military-background2.jpg");
     -webkit-background-size: cover;
@@ -159,9 +180,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 77px; }
-  #page div#content .bcgc {
-    height: 100vh;
+    background-position: center top; }
+    #page #content #bcgb .container {
+      padding-top: 400px;
+      padding-bottom: 200px; }
+      #page #content #bcgb .container h2 {
+        margin-bottom: 25px;
+        color: #f7aa0f; }
+      #page #content #bcgb .container h3 {
+        margin-bottom: 25px; }
+      #page #content #bcgb .container .separador {
+        margin-bottom: 35px; }
+  #page #content #bcgc {
     width: 100%;
     background-image: url("images/military-background3.jpg");
     -webkit-background-size: cover;
@@ -171,74 +201,125 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background-repeat: no-repeat;
     background-position: center 77px;
     background-attachment: fixed; }
+    #page #content #bcgc .container {
+      padding-top: 100px;
+      padding-bottom: 200px;
+      position: relative; }
+      #page #content #bcgc .container h2 {
+        margin-bottom: 25px; }
+      #page #content #bcgc .container h3 {
+        margin-bottom: 25px; }
+      #page #content #bcgc .container .separador {
+        margin-bottom: 35px; }
+      #page #content #bcgc .container p {
+        color: #FFF; }
+      #page #content #bcgc .container .military-base {
+        position: absolute;
+        bottom: 60px;
+        right: 15px; }
+  #page #content #bcgd {
+    width: 100%;
+    background-image: url("images/military-background4.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top; }
+    #page #content #bcgd .container {
+      padding-top: 100px;
+      padding-bottom: 500px;
+      position: relative; }
+      #page #content #bcgd .container h2 {
+        margin-bottom: 25px; }
+      #page #content #bcgd .container img.logo {
+        margin-bottom: 25px; }
+      #page #content #bcgd .container .separador {
+        margin-bottom: 35px; }
+      #page #content #bcgd .container .cronograma {
+        position: absolute;
+        bottom: -700px; }
+  #page #content #bcge {
+    width: 100%;
+    background-image: url("images/military-background5.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 77px;
+    background-attachment: fixed; }
+    #page #content #bcge .container {
+      padding-top: 260px;
+      padding-bottom: 200px;
+      position: relative; }
+      #page #content #bcge .container h2 {
+        margin-bottom: 25px; }
+      #page #content #bcge .container h3 {
+        margin-bottom: 25px; }
+      #page #content #bcge .container .separador {
+        margin-bottom: 35px;
+        margin-top: 80px; }
+      #page #content #bcge .container p {
+        color: #FFF; }
+  #page #content #bcgf {
+    width: 100%;
+    background-image: url("images/military-background6.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top; }
+    #page #content #bcgf .container {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      position: relative; }
+      #page #content #bcgf .container h2 {
+        margin-bottom: 25px; }
+      #page #content #bcgf .container .tel {
+        color: #f7aa0f;
+        font-size: 40px;
+        font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif; }
+      #page #content #bcgf .container .separador {
+        margin-bottom: 35px; }
   #page #footer {
-    background: linear-gradient(-90deg, #842b82, #562755);
+    background: #2d2d2d;
     color: #FFFFFF;
-    padding: 60px 0; }
+    padding-top: 60px;
+    padding-bottom: 40px; }
+    #page #footer h4 {
+      color: #f7aa0f; }
     #page #footer a {
       color: #FFF; }
-    #page #footer h3 {
-      color: #FFF;
-      font-weight: normal;
-      margin-bottom: 20px;
-      font-size: 30px; }
-    #page #footer p {
-      color: #efc031;
-      margin-bottom: 20px;
-      font-size: 18px; }
-    #page #footer .redes_sociais_header {
-      margin-top: 15px;
-      margin-bottom: 10px;
-      height: 68px;
-      list-style: none;
-      display: inline-block;
-      padding-left: 20px;
-      width: 340px; }
-    #page #footer .redes_sociais_header li:hover {
-      opacity: 0.6;
-      filter: alpha(opacity=60);
-      /* For IE8 and earlier */ }
-    #page #footer .redes_sociais_header a {
-      display: inline-block;
-      width: 68px;
-      height: 68px; }
-    #page #footer .redes_sociais_header .youtube {
-      background-image: url("images/redes-bot.png");
-      background-position: 5px,center;
-      background-repeat: no-repeat;
-      width: 68px;
-      height: 68px;
-      display: inline-block; }
-    #page #footer .redes_sociais_header .instagram {
-      background-image: url("images/redes-bot.png");
-      background-position: -75px,center;
-      background-repeat: no-repeat;
-      width: 68px;
-      height: 68px;
-      display: inline-block; }
-    #page #footer .redes_sociais_header .twitter {
-      background-image: url("images/redes-bot.png");
-      background-position: -160px,center;
-      background-repeat: no-repeat;
-      width: 68px;
-      height: 68px;
-      display: inline-block; }
-  #page div.copyrino {
-    background-color: #4a1c49;
-    text-align: center;
-    color: #FFF;
-    padding: 40px 0; }
-    #page div.copyrino ul {
-      list-style-type: none;
-      padding: 0; }
-      #page div.copyrino ul li {
-        float: left;
-        margin-left: 30px; }
-        #page div.copyrino ul li a {
-          color: #FFF; }
-        #page div.copyrino ul li a:hover {
-          color: #cd4228; }
   #page .wow {
     visibility: hidden; }
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */ }
+
+#status {
+  width: 260px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url("images/preloader.gif");
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -130px 0 0 -130px;
+  /* is width and height divided by two */ }
 
 /*# sourceMappingURL=style.css.map */
