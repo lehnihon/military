@@ -35,7 +35,7 @@ get_header(); ?>
 						</p>
 					</div><br><br>
 					<a class="btn-preto wow animated fadeInUp" href="#bcgc">SEGUINTE >></a><br><br>
-					<a class="btn-preto wow animated fadeInUp" href="#bcgc">QUERO SER AFILIADO >></a>
+					<a class="btn-preto wow animated fadeInUp" href="#bcgf">QUERO SER AFILIADO >></a>
 				</div>
 			</div>
 		</div>
@@ -51,7 +51,7 @@ get_header(); ?>
 						Pri volumus patrioque signiferumque ad, nonumes albucius an eos, ius ei assum inermis commune. Magna accusata vix te, erant iracundia hendrerit has at. Ne eum cibo petentium, alia dicta pertina.</p>
 					</div><br><br>
 					<div class="wow animated fadeIn">
-						<?php echo do_shortcode("[smartslider3 slider=1]"); ?>
+						<?php echo do_shortcode("[smartslider3 slider=3]"); ?>
 					</div>
 				</div>
 			</div>
@@ -91,14 +91,14 @@ get_header(); ?>
 3 mesês entregaremos os resultados em uma ficha técnica ao aluno, quando o mesmo pode entrar em um novo ciclo de treino focado no desenvolvimento. 
 						</p>
 					</div><br>
-					<a class="btn-preto wow animated fadeInUp">QUERO COMPRAR AGORA</a>
+					<a href="#bcgf" class="btn-preto wow animated fadeInUp">QUERO COMPRAR AGORA</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="bcgf">
 		<div class="container">
-			<div class="row contato">
+			<div id="contato" class="row">
 				<div class="col-md-12 text-left">
 					<div class="separador wow animated fadeInLeft"></div>
 					<h2 class="wow animated fadeInUp">ENTRE EM CONTATO<br>E SAIBA MAIS A NOSSO RESPEITO</h2>
@@ -118,7 +118,7 @@ get_header(); ?>
 					<p class="wow animated fadeInUp">redes</p>
 				</div>
 			</div><br><br><br>
-			<div class="row trabalhe">
+			<div id="trabalhe" class="row">
 				<div class="col-md-12 text-left">
 					<div class="separador wow animated fadeInLeft"></div>
 					<h2 class="wow animated fadeInUp">FAÇA PARTE DA<br> EQUIPE DA MILITARY</h2>

@@ -56,10 +56,10 @@ new WOW().init();
 						<a class="nav-link" href="#bcgc">ESTRUTURA</a>
 					</div>
 					<div class="col-md-auto">
-						<a class="nav-link" href="#bcge">HORÁRIOS/PLANOS</a>
+						<a class="nav-link" href="#bcgd">HORÁRIOS/PLANOS</a>
 					</div>
 					<div class="col-md-auto">
-						<a class="nav-link" href="#bcgf">TRABALHE CONOSCO</a>
+						<a class="nav-link" href="#trabalhe">TRABALHE CONOSCO</a>
 					</div>
 				</div>
 			</nav>

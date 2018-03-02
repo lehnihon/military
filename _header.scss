@@ -1,6 +1,6 @@
 #pesquisa{
     background-color:#2d2d2d;
-    padding:20px 0;
+    padding:15px 0;
 
     .logop{
         margin-top:3px;
@@ -8,7 +8,7 @@
     .cbusca{
         float:left;
         display:block;
-        padding:3px 10px;
+        padding:3px 15px;
         background-color:#141414;
         color:#FFF;
         border:2px solid #141414;
@@ -36,7 +36,7 @@
             padding-right:30px;
             color:#FFF;
             font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-size:30px;
+            font-size:26px;
             -webkit-transition: all 0.5s ease-in-out;
             -moz-transition: all 0.5s ease-in-out;
             -o-transition: all 0.5s ease-in-out;
@@ -51,7 +51,7 @@
 }
 
 .fixar {
-    padding:16px 0 !important;
+    padding:14px 0 !important;
     position:fixed !important;
     z-index: 1000 !important;
     margin-top: 0px !important;

@@ -30,7 +30,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   font-family: Aller Light, Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #292929;
   text-align: center;
-  font-size: 18px; }
+  font-size: 17px; }
   #page p {
     line-height: 1.9; }
   #page a {
@@ -40,17 +40,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page h1 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
-    font-size: 48px;
+    font-size: 42px;
     color: #292929; }
   #page h2 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
-    font-size: 60px;
+    font-size: 54px;
     color: #292929; }
   #page h3 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
-    font-size: 48px;
+    font-size: 42px;
     color: #292929; }
   #page h4 {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -65,7 +65,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     width: 80px; }
   #page .btn-preto {
     font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     background-color: #2d2d2d;
     color: #FFF;
     padding: 10px 25px;
@@ -83,13 +83,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     color: #f7aa0f; }
   #page #pesquisa {
     background-color: #2d2d2d;
-    padding: 20px 0; }
+    padding: 15px 0; }
     #page #pesquisa .logop {
       margin-top: 3px; }
     #page #pesquisa .cbusca {
       float: left;
       display: block;
-      padding: 3px 10px;
+      padding: 3px 15px;
       background-color: #141414;
       color: #FFF;
       border: 2px solid #141414;
@@ -112,7 +112,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         padding-right: 30px;
         color: #FFF;
         font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 30px;
+        font-size: 26px;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
@@ -121,7 +121,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       #page #header nav a:hover {
         color: #292929; }
   #page .fixar {
-    padding: 16px 0 !important;
+    padding: 14px 0 !important;
     position: fixed !important;
     z-index: 1000 !important;
     margin-top: 0px !important;
@@ -154,7 +154,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 77px;
+    background-position: center 67px;
     background-attachment: fixed; }
     #page #content #bcg .container {
       padding-top: 140px;
@@ -199,7 +199,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 77px;
+    background-position: center 67px;
     background-attachment: fixed; }
     #page #content #bcgc .container {
       padding-top: 100px;
@@ -247,7 +247,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 77px;
+    background-position: center 67px;
     background-attachment: fixed; }
     #page #content #bcge .container {
       padding-top: 260px;
