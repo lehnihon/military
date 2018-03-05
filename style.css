@@ -124,7 +124,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     padding: 14px 0 !important;
     position: fixed !important;
     z-index: 1000 !important;
-    margin-top: 0px !important;
     right: 0 !important;
     left: 0 !important;
     top: 0 !important;
@@ -137,15 +136,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     #page #header {
       background-color: #2d2d2d;
       top: 0;
-      padding: 16px 0 !important; }
-      #page #header .logop-mobile {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 10px; } }
-  @media (min-width: 992px) {
-    #page .logop-mobile {
-      display: none; } }
+      padding: 16px 0 !important; } }
   #page #content #bcg {
     width: 100%;
     background-image: url("images/military-background1.jpg");
@@ -283,6 +274,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif; }
       #page #content #bcgf .container .separador {
         margin-bottom: 35px; }
+  @media (max-width: 991px) {
+    #page #bcg .container {
+      padding-top: 100px !important;
+      padding-bottom: 200px !important; }
+      #page #bcg .container .video {
+        bottom: -100px !important; }
+    #page #bcgd .container {
+      padding-bottom: 200px !important; }
+      #page #bcgd .container .cronograma {
+        bottom: -300px !important; } }
   #page #footer {
     background: #2d2d2d;
     color: #FFFFFF;

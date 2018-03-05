@@ -2,7 +2,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-left">
-					<img class="logo-fot" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-bot.jpg"; ?>"/><br><br><br>
+					<img class="logo-fot img-fluid" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-bot.jpg"; ?>"/><br><br><br>
 					<h4>CONTATO</h4>
 					<p>
 						(31)3456 8587<br>

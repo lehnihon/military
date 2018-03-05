@@ -207,7 +207,27 @@
 	}
 }
 @media (max-width: 991px) {
+	#bcg{
+		.container{
+			padding-top:100px !important;
+			padding-bottom:200px !important;
 
+		    .video {
+		    	bottom:-100px !important;
+		    }
+		}
+	}
+	#bcgd{
+
+		.container{
+			padding-bottom:200px !important;
+
+		    .cronograma {
+
+		    	bottom:-300px !important;
+		    }
+	    }
+	}
 }
 
 @media (min-width: 992px) {  

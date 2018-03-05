@@ -63,7 +63,6 @@ new WOW().init();
 					</div>
 				</div>
 			</nav>
-			<img class="logop-mobile" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logop.png"; ?>"/>
 		</div><!-- .container -->
 	</header><!-- #masthead -->
 

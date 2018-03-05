@@ -55,30 +55,78 @@ function site_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'site_scripts' );
 
-function change_post_menu_label() {
-    global $menu;
-    global $submenu;
-    $menu[5][0] = 'Produtos';
-    $submenu['edit.php'][5][0] = 'Produtos';
-    $submenu['edit.php'][10][0] = 'Adicionar Produtos';
-    echo '';
+
+function register_post_type_home(){
+	$singular = 'Topo';
+	$plural = 'Topo';
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'add_new_item' => 'Adicionar novo '.$singular,
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+        'supports' => array('title', 'editor'),
+        'menu_position' => 4
+		);
+
+	register_post_type('home',$args);
 }
-function change_post_object_label() {
-        global $wp_post_types;
-        $labels = &$wp_post_types['post']->labels;
-        $labels->name = 'Produtos';
-        $labels->singular_name = 'Produto';
-        $labels->add_new = 'Adicionar Produto';
-        $labels->add_new_item = 'Adicionar Produto';
-        $labels->edit_item = 'Editar Produto';
-        $labels->new_item = 'Produto';
-        $labels->view_item = 'Ver Produto';
-        $labels->search_items = 'Procurar Produto';
-        $labels->not_found = 'Produto não encontrado';
-        $labels->not_found_in_trash = 'Sem Produtos na lixeira';
+add_action(	'init','register_post_type_home');
+
+function register_post_type_secao(){
+	$singular = 'Seção';
+	$plural = 'Seções';
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'add_new_item' => 'Adicionar novo '.$singular,
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+        'supports' => array('title', 'editor','thumbnail'),
+        'menu_position' => 5
+		);
+
+	register_post_type('secao',$args);
 }
-add_action( 'init', 'change_post_object_label' );
-add_action( 'admin_menu', 'change_post_menu_label' );
+add_action(	'init','register_post_type_secao');
+
+function wporg_add_custom_box()
+{
+    add_meta_box(
+        'wporg_box_id',           // Unique ID
+        'Video',  // Box title
+        'wporg_custom_box_html',  // Content callback, must be of type callable
+        'home'                   // Post type
+    );
+}
+add_action('add_meta_boxes', 'wporg_add_custom_box');
+
+function wporg_custom_box_html($post)
+{
+	$url = get_post_meta($post->ID, 'url', true);
+    ?>
+	    <p>
+	    	<label>Link do video: </label>
+		    <input style="width: 100%" type="text" name="url" value="<?php echo  esc_html($url) ?>">
+	    </p>
+    <?php
+}
+
+function wporg_save_postdata($post_id)
+{
+	if (array_key_exists('url', $_POST)) {
+        update_post_meta(
+            $post_id,
+            'url',
+            sanitize_text_field($_POST['url'])
+        );
+    }
+}
+add_action('save_post', 'wporg_save_postdata');
 
 function get_the_twitter_excerpt(){
 	$excerpt = get_the_content();

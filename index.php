@@ -3,17 +3,27 @@ get_header(); ?>
 
 <div id="content">
 	<div id="bcg" class="wow animated fadeIn" data-wow-duration="3s">
+		<?php
+		$args = array('post_type' => 'home', 'posts_per_page'=>'1');
+		$query = new WP_Query( $args );
+		while ( $query->have_posts() ) : $query->the_post(); 
+			preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', get_post_meta(get_the_ID(), 'url', true), $match);
+			$url = $match[1];
+		?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 text-left">
+					
+
 					<img class="logo img-fluid wow animated fadeInUp" data-wow-delay="1.5s" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo.png"; ?>"/>
-					<h1 class="wow animated fadeInUp" data-wow-delay="1.75s">UMA NOVA FORMA DE TRATAR SEU CORPO E SUA MENTE.</h1>
+					<h1 class="wow animated fadeInUp" data-wow-delay="1.75s"><?php the_title(); ?></h1>
 					<div class="separador wow animated fadeInLeft" data-wow-delay="2s"></div>
-					<p class="wow animated fadeIn" data-wow-delay="2.25s">Um treinamento que além de capacitar seu corpo a desenvolver atividades físicas até então inexploradas, trata da sua mente e superação. Que tem como foco a quebra de limites, e principalmente a saúde mental, e corporal.</p>
+					<p class="wow animated fadeIn" data-wow-delay="2.25s"><?php the_content(); ?></p>
 				</div>
 			</div>
-			<div class="video embed-responsive embed-responsive-16by9 wow animated fadeIn" data-wow-delay="2.5s"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p9WZ1jOvO-A" frameborder="0" allowfullscreen></iframe></div>
+			<div class="video embed-responsive embed-responsive-16by9 wow animated fadeIn" data-wow-delay="2.5s"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?php echo $url; ?>" frameborder="0" allowfullscreen></iframe></div>
 		</div>
+		<?php endwhile; // End of the loop. ?>
 	</div>
 	<div id="bcgb">
 		<div class="container">
