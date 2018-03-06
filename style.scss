@@ -110,6 +110,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		cursor:pointer;
 	}
 
+	.btn-amarelo{
+		font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size:20px;
+		background-color:#f7aa0f;
+		color:#FFF;
+		padding:10px 25px;
+		border:1px solid #f7aa0f;
+		-webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+	}
+
+	.btn-amarelo:hover{
+		background-color:#FFF;
+		color:#f7aa0f;
+		cursor:pointer;
+	}
+
+	.input-contato{
+		background-color:#2d2d2d;
+		color:#FFF;
+		padding:15px;
+		width:100%;
+		margin-bottom:0px;
+	}
+
+	.input-contato::placeholder {
+		color:#f7aa0f;
+	}
+
 	.amarelo{
 		color:#f7aa0f;
 	}

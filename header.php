@@ -19,6 +19,45 @@
 <script>
 new WOW().init();
 </script>
+<script>var TRange=null;
+
+      function findString (str) {
+       if (parseInt(navigator.appVersion)<4) return;
+       var strFound;
+       if (window.find) {
+
+        // CODE FOR BROWSERS THAT SUPPORT window.find
+
+        strFound=self.find(str);
+        if (!strFound) {
+         strFound=self.find(str,0,1);
+         while (self.find(str,0,1)) continue;
+        }
+       }
+       else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+        // EXPLORER-SPECIFIC CODE
+
+        if (TRange!=null) {
+         TRange.collapse(false);
+         strFound=TRange.findText(str);
+         if (strFound) TRange.select();
+        }
+        if (TRange==null || strFound==0) {
+         TRange=self.document.body.createTextRange();
+         strFound=TRange.findText(str);
+         if (strFound) TRange.select();
+        }
+       }
+       else if (navigator.appName=="Opera") {
+        alert ("Opera browsers not supported, sorry...")
+        return;
+       }
+       if (!strFound) alert ("'"+str+"' não foi encontrado!")
+       return;
+      }
+
+    </script>
 </head>
 
 <body>
@@ -28,15 +67,18 @@ new WOW().init();
 <div id="page">
 	<div id="pesquisa">
 		<div class="container">
+			<form id="formpesq"  action="javascript:void()" onsubmit="if(this.cbuscar.value!=null &amp;&amp; this.cbuscar.value!='')
+parent.findString(this.cbuscar.value);return false;">
 			<div class="row">
 				<div class="col-md-2 text-left">
 					<img class="logop" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logop.png"; ?>"/>
 				</div>
 				<div class="col-md">
 					<input type="text" name="cbuscar" class="cbusca">
-					<img class="bbusca" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/botao-busca.jpg"; ?>"/>
+					<input type="image" class="bbusca" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/botao-busca.jpg"; ?>"/>
 				</div>
 			</div>
+			</form>
 		</div>
 	</div>
 	<header id="header" class="header">

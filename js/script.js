@@ -21,6 +21,8 @@
           }
         }
       });
+
+      
     });
     var $meuMenu = $('#header');
     $(document).on('scroll', function () {
