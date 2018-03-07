@@ -10,25 +10,25 @@
 					</p>
 					<p>
 						<div class="row">
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('facebook'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes1b.jpg"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('twitter'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes2b.jpg"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('google'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes3b.jpg"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('instagram'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes4b.jpg"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('youtube'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes5b.jpg"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('pinterest'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes6b.jpg"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('linkedin'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes7b.jpg"; ?>"/></a>
 							</div>
 						</div>

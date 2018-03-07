@@ -11,7 +11,7 @@
 	    background-attachment: fixed;
 		.container{
 			padding-top:140px;
-			padding-bottom:400px;
+			padding-bottom:450px;
 		    position:relative;
 
 		    h1{
@@ -32,7 +32,7 @@
 
 		    .video {
 		    	position:absolute;
-		    	bottom:-300px;
+		    	bottom:-250px;
 		    	z-index:1000;
 		    }
 	    }
@@ -135,7 +135,7 @@
 
 		    .cronograma {
 		    	position:absolute;
-		    	bottom:-700px;
+		    	bottom:-250px;
 		    }
 	    }
 	}
@@ -151,7 +151,7 @@
 		background-position: center 67px;
 	    background-attachment: fixed;
 	    .container{
-			padding-top:260px;
+			padding-top:300px;
 			padding-bottom:200px;
 		    position:relative;
 
@@ -203,6 +203,11 @@
 		    	margin-bottom:35px;
 		    }
 
+		    .redes{
+		    	float:left;
+		    	padding-left:10px;
+		    }
+
 	    }
 	}
 }
@@ -217,6 +222,12 @@
 		    }
 		}
 	}
+	#bcgb{
+		.container{
+			padding-top:200px !important;
+		}
+
+	}
 	#bcgd{
 
 		.container{
@@ -224,7 +235,7 @@
 
 		    .cronograma {
 
-		    	bottom:-300px !important;
+		    	bottom:-100px !important;
 		    }
 	    }
 	}

@@ -95,7 +95,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		font-size:20px;
 		background-color:#2d2d2d;
 		color:#FFF;
-		padding:10px 25px;
+		padding:10px 35px;
 		border:1px solid #2d2d2d;
 		-webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
@@ -115,7 +115,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		font-size:20px;
 		background-color:#f7aa0f;
 		color:#FFF;
-		padding:10px 25px;
+		padding:10px 35px;
 		border:1px solid #f7aa0f;
 		-webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
@@ -142,6 +142,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		color:#f7aa0f;
 	}
 
+	.input-contatob{
+		background-color:#f7aa0f;
+		color:#2d2d2d;
+		padding:15px;
+		width:100%;
+		margin-bottom:0px;
+	}
+
+	.input-contatob::placeholder {
+		color:#2d2d2d;
+	}
+
 	.amarelo{
 		color:#f7aa0f;
 	}
@@ -151,6 +163,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	@import 'footer';
 	
 	.wow { visibility: hidden; }
+}
+
+.image-upload
+{
+	.curriculo{
+		display: none!important;
+	}
+
 }
 
 /* Preloader */

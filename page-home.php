@@ -99,25 +99,25 @@ get_header(); ?>
 					<p class="tel wow animated fadeInUp"><?php the_field('telefone'); ?></p>
 					<p class="wow animated fadeInUp">
 						<div class="row">
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('facebook'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes1.png"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('twitter'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes2.png"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('google'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes3.png"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('instagram'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes4.png"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('youtube'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes5.png"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('pinterest'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes6.png"; ?>"/></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="redes">
 								<a target="_blank" href="<?php the_field('linkedin'); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/redes7.png"; ?>"/></a>
 							</div>
 						</div>
@@ -133,7 +133,7 @@ get_header(); ?>
 					</div>
 					<br>
 					<div class="wow animated fadeIn">
-						<?php echo do_shortcode('[contact-form-7 id="47" title="Contato"]'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="371" title="Contato 2"]'); ?>
 					</div>
 				</div>
 			</div>

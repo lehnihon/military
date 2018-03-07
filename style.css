@@ -68,7 +68,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     font-size: 20px;
     background-color: #2d2d2d;
     color: #FFF;
-    padding: 10px 25px;
+    padding: 10px 35px;
     border: 1px solid #2d2d2d;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -84,7 +84,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     font-size: 20px;
     background-color: #f7aa0f;
     color: #FFF;
-    padding: 10px 25px;
+    padding: 10px 35px;
     border: 1px solid #f7aa0f;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -103,6 +103,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     margin-bottom: 0px; }
   #page .input-contato::placeholder {
     color: #f7aa0f; }
+  #page .input-contatob {
+    background-color: #f7aa0f;
+    color: #2d2d2d;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 0px; }
+  #page .input-contatob::placeholder {
+    color: #2d2d2d; }
   #page .amarelo {
     color: #f7aa0f; }
   #page #pesquisa {
@@ -173,7 +181,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background-attachment: fixed; }
     #page #content #bcg .container {
       padding-top: 140px;
-      padding-bottom: 400px;
+      padding-bottom: 450px;
       position: relative; }
       #page #content #bcg .container h1 {
         margin-bottom: 25px; }
@@ -185,7 +193,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         color: #FFF; }
       #page #content #bcg .container .video {
         position: absolute;
-        bottom: -300px;
+        bottom: -250px;
         z-index: 1000; }
   #page #content #bcgb {
     width: 100%;
@@ -253,7 +261,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         margin-bottom: 35px; }
       #page #content #bcgd .container .cronograma {
         position: absolute;
-        bottom: -700px; }
+        bottom: -250px; }
   #page #content #bcge {
     width: 100%;
     background-image: url("images/military-background5.jpg");
@@ -265,7 +273,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background-position: center 67px;
     background-attachment: fixed; }
     #page #content #bcge .container {
-      padding-top: 260px;
+      padding-top: 300px;
       padding-bottom: 200px;
       position: relative; }
       #page #content #bcge .container h2 {
@@ -298,16 +306,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif; }
       #page #content #bcgf .container .separador {
         margin-bottom: 35px; }
+      #page #content #bcgf .container .redes {
+        float: left;
+        padding-left: 10px; }
   @media (max-width: 991px) {
     #page #bcg .container {
       padding-top: 100px !important;
       padding-bottom: 200px !important; }
       #page #bcg .container .video {
         bottom: -100px !important; }
+    #page #bcgb .container {
+      padding-top: 200px !important; }
     #page #bcgd .container {
       padding-bottom: 200px !important; }
       #page #bcgd .container .cronograma {
-        bottom: -300px !important; } }
+        bottom: -100px !important; } }
   #page #footer {
     background: #2d2d2d;
     color: #FFFFFF;
@@ -317,8 +330,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       color: #f7aa0f; }
     #page #footer a {
       color: #FFF; }
+    #page #footer .redes {
+      float: left;
+      padding-left: 10px; }
   #page .wow {
     visibility: hidden; }
+
+.image-upload .curriculo {
+  display: none !important; }
 
 /* Preloader */
 #preloader {
